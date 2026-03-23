@@ -13,7 +13,20 @@ const nodes = [
         id: "1",
         position: { x: 100, y: 100 },
         data: { label: "Anúncio" },
-    }
+    },
+    {
+        id: "2",
+        position: { x: 300, y: 100 },
+        data: { label: "Landing Page" },
+    },
+]
+
+const edges = [
+    {
+        id: "e1-2",
+        source: "1",
+        target: "2",
+    },
 ]
 
 export default function Funil() {
@@ -21,7 +34,7 @@ export default function Funil() {
         <section className="flex-1">
             <ReactFlow
                 nodes={nodes}
-                edges={[]}
+                edges={edges}
                 fitView
                 >
                 <Background />
