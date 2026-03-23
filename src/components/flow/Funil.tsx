@@ -8,11 +8,19 @@ import ReactFlow, {
 
 import "reactflow/dist/style.css";
 
+const nodes = [
+    {
+        id: "1",
+        position: { x: 100, y: 100 },
+        data: { label: "Anúncio" },
+    }
+]
+
 export default function Funil() {
     return (
         <section className="flex-1">
             <ReactFlow
-                nodes={[]}
+                nodes={nodes}
                 edges={[]}
                 fitView
                 >
